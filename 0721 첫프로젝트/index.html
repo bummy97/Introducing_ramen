@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>4조 라면 소개 페이지</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- 내비바 -->
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <!-- A-4조 로고 넣기 -->
+                <a href="index.html"><img id="logo" src="logo.png" alt="" width="30px"></a>
+                <a class="navbar-brand" href="index.html">A-4조</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                        </li>
+                    </ul>
+
+                    <!-- 로그인 회원가입 페이지로 이동  -->
+
+                    <ul id="login_SignUp" class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="login.html">로그인</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html">회원가입</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- 메인페이지 시작  -->
+    <main>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+
+            <!-- 첫번째 배너 넣기 -->
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="baner.png" alt="baner">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1 id="baner">우리의 맛</h1>
+                            <p id="baner">라면 소개</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">View Detail</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 두번째 배너 넣기 -->
+
+                <div class="carousel-item">
+                    <img src="baner2.png" alt="">
+
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <p><a class="btn btn-lg btn-primary" href="#">당신의 선택은?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 배너 이동 버튼 -->
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <!-- Marketing messaging and featurettes
+  ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+
+
+        <!-- START THE FEATURETTES -->
+
+        <!-- 메인페이지 시작  -->
+
+        <hr class="featurette-divider">
+
+        <!-- 간짬뽕 설명 페이지 -->
+
+        <div>
+            <section>
+                <div id="section1" class="row featurette content">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">풍부한 해물맛 <span class="text-muted"> <br>간짬뽕</span></h2>
+                        <p><a class="btn btn-lg btn-primary" href="간짬뽕2.html">더 알아보기</a></p>
+                    </div>
+                    <div class="col-md-5">
+                        <img id="a11" src="a11.png" alt="" width="110%">
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <!-- 너구리 설명 페이지 -->
+
+                <div id="section2" class="row featurette content">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">쫄깃쫄깃<br> 오통통통 <span class="text-muted"><br>너구리</span></h2>
+                        <p><a class="btn btn-lg btn-primary" href="너구리.html">더 알아보기</a></p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img id="a11" src="a21.png" alt="" width="120%">
+
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+                <!-- 팔도 비빔면 설명 페이지 -->
+                <div id="section3" class="row featurette content">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">오른손으로 <br>비비고~ <br>왼손으로<br> 비비고~ <span class="text-muted"><br>팔도 비빔면</span></h2>
+                        <p><a class="btn btn-lg btn-primary" href="비빔면.html">더 알아보기</a></p>
+                    </div>
+                    <div class="col-md-5">
+                        <img id="a11" src="a31.png" alt="" width="110%">
+
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <!-- 신라면 설명 페이지 -->
+
+                <div id="section4" class="row featurette content">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">부동의 1위 <span class="text-muted"><br>신라면</span></h2>
+                        <p><a class="btn btn-lg btn-primary" href="신라면.html">더 알아보기</a></p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img id="a11" src="a41.png" alt="" width="120%">
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- aside 간편주문 -->
+
+            <aside>
+                <form>
+                    <div class="aside-content">
+                        <div>
+                            <p id="order-text">간편주문하기</p>
+                        </div>
+
+                        <hr class="aside-divider">
+
+                        <ol>
+                            <li class="aside-ol">
+                                <b>원하시는 라면과 수량을 입력해주세요</b>
+                                <ul>
+                                    <li>
+                                        <div class="check">
+                                            <label for="a1"><input class="checkbox" type="checkbox" id="a1"><img class="ramen-image" id="a1" src="a1.png" alt="" width="80px"><div class="ramen_name">간짬뽕</div></label>
+                                            <div class="number">
+                                                <input type="number" name="number" value="" min:"1" max:"100" width="20px" placeholder="수량을 정해주세요">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check">
+                                            <label for="a2"><input class="checkbox" type="checkbox" id="a2"><img class="ramen-image" id="a2" src="a2.png" alt="" width="80px"><div class= "ramen_name">너구리</div></label>
+                                            <div class="number">
+                                                <input type="number" name="number" value="" min:"1" max:"100" width="20px" placeholder="수량을 정해주세요">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check">
+                                            <label for="a3"><input class="checkbox" type="checkbox" id="a3"><img class="ramen-image" id="a3" src="a3.png" alt="" width="80px"><div class="ramen_name">팔도 비빔면</div></label>
+                                            <div class="number">
+                                                <input type="number" name="number" value="" min:"1" max:"100" width="20px" placeholder="수량을 정해주세요">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check">
+                                            <label for="a4"><input class="checkbox" type="checkbox" id="a4"><img class="ramen-image" id="a4" src="a4.png" alt="" width="80px"><div class="ramen_name">신라면</div></label>
+                                            <div class="number">
+                                                <input type="number" name="number" value="" min-"1" max="100" width="20px" placeholder="수량을 입력해주세요">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <hr class="aside-divider">
+
+                            <li class="aside-ol">
+                                <b>원하시는 배송 날짜가 있으신가요?</b>
+                                <div class="post">
+                                    <label for="post1"><input id="post1" type="radio" name="checkdate">없음</label>
+                                    <br>
+                                    <label for="post2"><input id="post2" type="radio" name="checkdate">있음</label>
+                                    <br>
+                                    <input id="post2" type="date" name="date" value="date" min="2021-07-21" max="2022-01-01" required>
+                                    <span class="validity"></span>
+                                    <!-- 날짜 유효성 검사 실시 -->
+                                    <input type="submit" value="확인">
+                                    <div class="checkday">공휴일 제외 3일 이후로 가능합니다</div>
+                                </div>
+                            </li>
+
+                            <hr class="aside-divider">
+
+                            <li class="aside-ol">
+                                <b>주문방식 선택<b>
+                                <label for="pay">원하시는 결제방식을 선택해주세요:</label>
+                                <select id="pay" name="pay">.
+                                    <option value="creit">신용카드</option>
+                                    <option value="account">무통장입금</option>
+                                    <option value="easypay">간편결제</option>
+                                </select>
+                                <div class="submit">
+                                    <input type="submit" value="결제">
+                                    <input type="submit" value="취소">
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </form>
+            </aside>
+        </div>
+
+        <hr id="footer-divider" class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+        <!-- /.container -->
+
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>제작자 : 강경모, 김광호, 김범수, 김용범</p>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
